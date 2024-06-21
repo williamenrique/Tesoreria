@@ -1,0 +1,2 @@
+<?= head($data)?>
+<?= footer($data)?>
