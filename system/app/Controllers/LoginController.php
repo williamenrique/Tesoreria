@@ -14,21 +14,19 @@ class Login extends Controllers{
 	public function login(){
 		//invocar la vista con views y usamos getViews y pasamos parametros esta clase y la vista
 		//incluimos un arreglo que contendra toda la informacion que se enviara al home
+		$data['page_tag'] = "TESORERIA - ACCESO";
 		$data['page_title'] = "Login";
-		$data['page_userImg'] = "usuario/default.png";
-		$data['page_userNomb'] = "William Enrique";
-		$data['page_userRol'] = "Administrador";
 		$data['page_name'] = "login";
 		$data['page_functions'] = "functionLogin.js";
 		$this->views->getViews($this, "login", $data);
 	}
 	public function loginUser(){
 		if($_POST){
-			if(empty($_POST['textUser']) || empty($_POST['textPass'])){
+			if(empty($_POST['txtUser']) || empty($_POST['txtPass'])){
 				$arrResponse = array('status' => false, 'msg' => 'Error en datos');
 			}else{
-				$strUser = strtolower($_POST['textUser']);
-				$strPass = encryption($_POST['textPass']);
+				$strUser = strtolower($_POST['txtUser']);
+				$strPass = encryption($_POST['txtPass']);
 				$requestUser = $this->model->loginUser($strUser,$strPass);
 				if(empty($requestUser)){
 					$arrResponse = array('status' => false, 'msg' => 'El usuario o el password es incorrecto');

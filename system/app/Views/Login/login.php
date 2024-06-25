@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
 		<meta name="author" content="BootstrapDash">
-		<title>Estacion de servicio</title>
+		<title><?= $data['page_tag'] ?></title>
 		<!-- azia CSS -->
 		<link rel="stylesheet" href="<?= PLUGINS ?>css/sweetalert2.css">
 		<link rel="stylesheet" href="<?= CSS ?>azia.css">
