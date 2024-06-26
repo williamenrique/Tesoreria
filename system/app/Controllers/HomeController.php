@@ -15,9 +15,9 @@ class Home extends Controllers{
 		$data['page_tag'] = "Pagina principal";
 		$data['page_title'] = "Pagina Principal";
 		$data['page_name'] = "home";
-		$data['page_link'] = "home";
-		$data['page_menu_open'] = "home-menu";
-		$data['page_link_acitvo'] = "link-home";
+		$data['page_link'] = "active-home";//activar el menu desplegable o un lin solo
+		$data['page_menu_open'] = "menu-open-home";//abrir el desplegable
+		$data['page_link_acitvo'] = "link-home";// seleccionar el link en el momento
 		$data['page_functions'] = "function.home.js";
 		$this->views->getViews($this, "home", $data);
 	}
