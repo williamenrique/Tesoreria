@@ -15,6 +15,9 @@ class Home extends Controllers{
 		$data['page_tag'] = "Pagina principal";
 		$data['page_title'] = "Pagina Principal";
 		$data['page_name'] = "home";
+		$data['page_link'] = "home";
+		$data['page_menu_open'] = "home-menu";
+		$data['page_link_acitvo'] = "link-home";
 		$data['page_functions'] = "function.home.js";
 		$this->views->getViews($this, "home", $data);
 	}
