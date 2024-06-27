@@ -11,13 +11,11 @@
 		<link rel="stylesheet"
 			href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 		<link rel="stylesheet" href="<?= PLUGINS?>css/all.min.css">
-		<!-- sweetalert -->
 		<link rel="stylesheet" href="<?= PLUGINS ?>css/sweetalert2.css">
-		<!-- select -->
 		<link rel="stylesheet" href="<?= PLUGINS ?>css/bootstrap-select.min.css">
-		<!-- overlayScrollbars -->
 		<link rel="stylesheet" href="<?= PLUGINS ?>css/OverlayScrollbars.min.css">
-		<!-- Theme style -->
+		<link rel="stylesheet" href="<?= PLUGINS ?>css/dataTables.bootstrap4.min.css">
+		<link rel="stylesheet" href="<?= PLUGINS ?>css/responsive.bootstrap4.min.css">
 		<link rel="stylesheet" href="<?= CSS ?>style.admin.css">
 		<link rel="stylesheet" href="<?= CSS ?>adminlte.min.css">
 	</head>
