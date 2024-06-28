@@ -19,11 +19,13 @@ if (document.querySelector("." + page_menu_open)) {
 <script src="<?= PLUGINS ?>js/jquery.min.js"></script>
 <script src="<?= PLUGINS ?>js/bootstrap.bundle.min.js"></script>
 <script src="<?= PLUGINS ?>js/jquery.overlayScrollbars.min.js"></script>
-<script src="<?= PLUGINS ?>js/bootstrap-select.min.js"></script>
+<!-- <script src="<?= PLUGINS ?>js/bootstrap-select.min.js"></script> -->
+<!-- <script src="<?= PLUGINS ?>js/select2.full.min.js"></script> -->
 <script src="<?= PLUGINS ?>js/jquery.dataTables.min.js"></script>
 <script src="<?= PLUGINS ?>js/dataTables.bootstrap4.min.js"></script>
 <script src="<?= PLUGINS ?>js/dataTables.responsive.min.js"></script>
 <script src="<?= PLUGINS ?>js/responsive.bootstrap4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="<?= PLUGINS ?>js/sweetalert2@10.js"></script>
 <script src="<?= PLUGINS ?>js/adminlte.js"></script>
 <script src="<?= JS ?>function.main.js"></script>

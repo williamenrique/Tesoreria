@@ -34,9 +34,9 @@
 									<div class="col-sm-3 my-1">
 										<label class="sr-only" for="inlineFormInputName">ID PERSONAL</label>
 										<input type="text" class="form-control" placeholder="ID Personal" id="txtIdPersonal"
-											name="txtIdPersonal">
+											name="txtIdPersonal" onkeypress="return soloNumeros(event);">
 									</div>
-									<div class="col-sm-3 my-1">
+									<div class=" col-sm-3 my-1">
 										<select class="custom-select" name="listRolId" id="listRolId">
 											<option selected value="0">SELECCIONE PUESTO</option>
 											<option value="1">ADMINISTRADOR</option>
@@ -46,24 +46,25 @@
 									</div>
 									<div class="col-sm-3 my-1">
 										<label class="sr-only" for="inlineFormInputName">NOMBRE</label>
-										<input type="text" class="form-control" placeholder="NOMBRE" id="txtNombre" name="txtNombre">
+										<input type="text" class="form-control" placeholder="NOMBRE" id="txtNombre" name="txtNombre"
+											onkeypress="return soloLetras(event);">
 									</div>
-									<div class="col-sm-3 my-1">
+									<div class=" col-sm-3 my-1">
 										<label class="sr-only" for="inlineFormInputName">APELLIDO</label>
-										<input type="text" class="form-control" placeholder="APELLIDO" id="txtApellido" name="txtApellido">
+										<input type="text" class="form-control" placeholder="APELLIDO" id="txtApellido" name="txtApellido"
+											onkeypress="return soloLetras(event);">
 									</div>
 								</div>
-								<div class="form-row align-items-center">
+								<div class=" form-row align-items-center">
 									<div class="col-sm-3 my-1">
 										<label class="sr-only" for="inlineFormInputName">TELEFONO</label>
-										<input type="text" class="form-control" placeholder="TELEFONO" id="txtTelefono" name="txtTelefono">
+										<input type="text" class="form-control" placeholder="TELEFONO" id="txtTelefono" name="txtTelefono"
+											onkeypress="return soloNumeros(event);">
 									</div>
-									<div class="col-sm-3 my-1">
+									<div class=" col-sm-3 my-1">
 										<label class="sr-only" for="inlineFormInputName">EMAIL</label>
 										<input type="text" class="form-control" placeholder="EMAIL" id="txtEmail" name="txtEmail">
 									</div>
-								</div>
-								<div class="col-auto my-1">
 								</div>
 								<button type="submit" id="btnActionForm" class="btn btn-primary btn-sm "> <i
 										class="fas fa-plus"></i><span id="btnText" class="ml-1">Agregar</span>

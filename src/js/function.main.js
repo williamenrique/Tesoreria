@@ -70,10 +70,15 @@ function notifi(data, icon) {
 	}, false);
 })();
 
-window.onunload = unloadPage;
-function unloadPage(){
- alert("unload event detected!");
-}
+$(function () {
+	//Initialize Select2 Elements
+	$('.select2').select2()
+
+	//Initialize Select2 Elements
+	$('.select2bs4').select2({
+		theme: 'bootstrap4'
+	})
+})
 // TODO: generar un respaldo de la base de datos
 fntBackup2 = () => {
 	// jObject= JSON.stringify(srtPago)

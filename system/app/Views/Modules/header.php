@@ -12,10 +12,13 @@
 			href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 		<link rel="stylesheet" href="<?= PLUGINS?>css/all.min.css">
 		<link rel="stylesheet" href="<?= PLUGINS ?>css/sweetalert2.css">
-		<link rel="stylesheet" href="<?= PLUGINS ?>css/bootstrap-select.min.css">
 		<link rel="stylesheet" href="<?= PLUGINS ?>css/OverlayScrollbars.min.css">
 		<link rel="stylesheet" href="<?= PLUGINS ?>css/dataTables.bootstrap4.min.css">
 		<link rel="stylesheet" href="<?= PLUGINS ?>css/responsive.bootstrap4.min.css">
+		<!-- <link rel="stylesheet" href="<?= PLUGINS ?>css/bootstrap-select.min.css"> -->
+		<!-- <link rel="stylesheet" href="<?= PLUGINS ?>css/select2.full.min.css"> -->
+		<!-- <link rel="stylesheet" href="<?= PLUGINS ?>css/select2-bootstrap4.min.css"> -->
+		<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="<?= CSS ?>style.admin.css">
 		<link rel="stylesheet" href="<?= CSS ?>adminlte.min.css">
 	</head>
@@ -106,6 +109,12 @@
 								<a href="<?= base_url() ?>" class="nav-link active-home">
 									<i class="nav-icon fas fa-th"></i>
 									<p>INCIO</p>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="<?= base_url() ?>recibo" class="nav-link active-recibo">
+									<i class="nav-icon far fa-list-alt"></i>
+									<p>RECIBO</p>
 								</a>
 							</li>
 							<li class="nav-item menu-open-user">
