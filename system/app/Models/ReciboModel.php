@@ -15,4 +15,15 @@ class ReciboModel extends Mysql {
 		$request = $this->select_all($sql);
 		return $request;
 	}
+	public function setRecibo(int $intPersonal,int $intUnidad, string $srtfecha, string $srtRuta){
+		$this->intPersonal = $intPersonal;
+		$this->intUnidad  = $intUnidad;
+		$this->srtfecha  = $srtfecha;
+		$this->srtRuta  = $srtRuta;
+		$sql = "INSERT INTO table_recibo (id_unidad,id_operador,ruta_recibo,fecha_recibo,status_recibo) VALUES (?, ?, ?, ?, ?, ?)";
+		$arrData = array($this->intUnidad,$this->intPersonal,$this->srtRuta,$this->srtfecha,1);
+		$request_insert = $this->insert($sql,$arrData);//enviamos el query y el array de datos 
+		$return = $request_insert;//retorna el id insertado
+		return $return;
+	}
 }

@@ -51,6 +51,21 @@ class Recibo extends Controllers{
 	}
 	/******** creamos el recibo *********/
 	public function setRecibo(){
-
+		$listPersonal = intval($_POST['listPersonal']);
+		$listUnidad = intval($_POST['listUnidad']);
+		$txtfecha = $_POST['txtfecha'];
+		$txtRuta = strtoupper($_POST['txtRuta']);
+		if($listPersonal == "" || $listUnidad == "" || $txtfecha == "" || $txtRuta == ""){
+			$arrResponse = array('status'=> false,'msg' => 'Debe llenar los campos'); 
+		}else{
+			$request = $this->model->setRecibo($listPersonal,$listUnidad, $txtfecha, $txtRuta);
+			if($request > 0){
+				$arrResponse = array('status'=> true,'msg' => 'Recibo creado');
+			}else{
+				$arrResponse = array('status'=> false,'msg' => 'No se pudo crear');
+			}
+		}
+		echo json_encode($arrResponse,JSON_UNESCAPED_UNICODE);
+		die();
 	}
 }
