@@ -1,5 +1,5 @@
 <?php
-const BASE_URL = "http://192.168.1.210/tesoreria/";
+const BASE_URL = "http://192.168.1.200/tesoreria/";
 const HEAD = "src/include/head.php";
 const FOOTER = "src/include/footer.php";
 // const BACK_URL = $_SERVER['REQUEST_URI'];
